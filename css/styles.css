@@ -19,24 +19,61 @@ body {
 .wrapper {
     padding: 0 30px;
 }
+.grid {
+    display: grid;
+    grid-row-gap: 25px;
+}
+
+/* header */
+.header {
+    background: #f8f9fe;
+    padding-bottom: 100px;
+    border-radius: 0 0 20px 20px;
+    padding-top: 2em;
+}
+.header-total {
+    color: var(--gray);
+    margin: .5em 0;
+    font-weight: 600;
+    border-bottom: 2px solid var(--gray);
+    padding-bottom: 1.5em;
+}
+h1 {
+    margin: 0;
+    font-size: 1.7em;
+}
+/* top-card */
+.top-cards {
+    margin-top: -50px;
+}
+/* card */
 .card {
     /* border-top: 1px solid blue; */
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     background: #f0f3fa;
     text-align: center;
-
 }
 .card:before {
     content: "";
     height: 4px;
     display: block;
+}
+.card.facebook::before {
     background: var(--facebook);
+}
+.card.twitter::before {
+    background: var(--twitter);
+}
+.card.instagram::before {
+    background-image: linear-gradient(to right, var(--instagram1) 0%, var(--instagram2) 100%);
+}
+.card.youtube::before {
+    background: var(--youTube);
 
 }
-
 .card-title {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,16 +87,32 @@ body {
 }
 
 .card-followers {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .card-followers-number {    
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     font-size: 60px;
     font-weight: 700;
 }
 .card-followers-title {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     display: block;
     text-transform: uppercase;
+    color: var(--gray);
+    letter-spacing: 5px;
+    font-size: .75em;    
+}
+.card-today {
+    margin-top: 20px;
+    color: var(--lime-green);
+    font-size: .7em;
+    font-weight: bold ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-today img {
+    margin-right: 5px;
 }
