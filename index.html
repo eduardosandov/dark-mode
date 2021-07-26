@@ -7,31 +7,81 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper">
             <h1>Social Media Dashboard</h1>
-            <p>Total de Followers: 23,000</p>
+            <p class="header-total">Total de Followers: 23,000</p>
         </div>
     </header>
-    <section>
+    <section class="top-cards">
         <div class="wrapper">
-            <article class="card">
-                <p class="card-title">
-                    <img src="./images/icon-facebook.svg" alt="">
-                    @EduardoSandoval
-                </p>
-                <p class="card-followers">
-                   <span class="card-followers-number">1987</span>
-                   <span class="card-followers-title">Followers</span>
-                </p>
-                <p>
-                    12 Today
-                </p>
-            </article>
+            <div class="grid">
+                <article class="card facebook">
+                    <p class="card-title">
+                        <img src="./images/icon-facebook.svg" alt="">
+                        @EduardoSandoval
+                    </p>
+                    <p class="card-followers">
+                       <span class="card-followers-number">1987</span>
+                       <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="./images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+                <article class="card twitter">
+                    <p class="card-title">
+                        <img src="./images/icon-twitter.svg" alt="">
+                        @EduardoSandoval
+                    </p>
+                    <p class="card-followers">
+                       <span class="card-followers-number">1044</span>
+                       <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="./images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+                <article class="card instagram">
+                    <p class="card-title">
+                        <img src="./images/icon-instagram.svg" alt="">
+                        @EduardoSandoval
+                    </p>
+                    <p class="card-followers">
+                       <span class="card-followers-number">11k</span>
+                       <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="./images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+                <article class="card youtube">
+                    <p class="card-title">
+                        <img src="./images/icon-youtube.svg" alt="">
+                        @EduardoSandoval
+                    </p>
+                    <p class="card-followers">
+                       <span class="card-followers-number">8239</span>
+                       <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="./images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="overview">
+        <div class="wrapper">
+
         </div>
     </section>
 </body>
