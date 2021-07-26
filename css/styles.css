@@ -53,11 +53,17 @@ h1 {
     overflow: hidden;
     background: #f0f3fa;
     text-align: center;
+    padding: 1.7em 0;
+    position: relative;
 }
 .card:before {
     content: "";
     height: 4px;
     display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 .card.facebook::before {
     background: var(--facebook);
