@@ -1,10 +1,38 @@
 body {
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    /* border: 1px solid red; */
 }
 
-.tarjed {
-    margin:red ;
+.wrapper {
+    padding: 0 30px;
 }
-.section1{
-    border: green;
+.card {
+    /* border-top: 1px solid blue; */
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f0f3fa;
+    text-align: center;
+
+}
+.card::before {
+    content: "";
+    height: 4px;
+    display: block;
+    background: red;
+
+}
+.card-followers {
+    border: 1px solid red;
+}
+
+.card-followers-number {    
+    border: 1px solid blue;
+    font-size: 60px;
+    font-weight: 700;
+}
+.card-followers-title {
+    border: 1px solid violet;
+    display: block;
+    text-transform: uppercase;
 }
