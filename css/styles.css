@@ -185,9 +185,6 @@ h2 {
 }
 
 @media screen and (min-width: 480px){
-    body{
-
-    }
     .grid{
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 25px;
